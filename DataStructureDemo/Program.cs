@@ -12,7 +12,7 @@
             list.Display();
             Console.WriteLine("---------------");
 
-            list.RemoveFirstNode();
+            list.RemoveLastNode();
             Console.WriteLine("Elements in the Linked List are : ");
             list.Display();
         }
