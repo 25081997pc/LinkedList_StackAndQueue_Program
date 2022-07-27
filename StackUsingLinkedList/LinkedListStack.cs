@@ -34,6 +34,37 @@ namespace StackUsingLinkedList
                 Console.Write(temp.data + " "); //56 30 70 
                 temp = temp.next;
             }
-        }   
+        }
+        //This method is created to Show the top element of the stack
+        internal void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty");
+                return;
+            }
+            Console.WriteLine("{0} is in the top of the stack ", this.top.data);
+        }
+        //This method is created to Popping the Stack Element
+        internal void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty, Deletion is not possible");
+                return;
+            }
+            Console.WriteLine("Value popped is {0} ", this.top.data);
+            this.top = this.top.next;
+        }
+        //This method is working till stack becomes empty.
+        internal void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+            Console.WriteLine("Stack is Empty");
+        }
     }
 }
