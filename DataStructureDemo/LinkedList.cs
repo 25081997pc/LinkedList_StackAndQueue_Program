@@ -113,6 +113,7 @@ namespace DataStructureDemo
             }
             return null;
         }
+        //This method is created to Inster newnode At postion
         internal void insertAtPosition(int newElement, int positon)
         {
             Node newNode = new Node();
@@ -149,6 +150,7 @@ namespace DataStructureDemo
                 }
             }
         }
+        //This Method is created to Delete Inserting Node
         internal void Delete_atPosition(int position)
         {
             if (position < 1)
