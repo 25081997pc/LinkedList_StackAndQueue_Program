@@ -77,5 +77,13 @@ namespace DataStructureDemo
                 middle.next = node;
             }
         }
+        //This method created to Delete First Element of Linked List
+        internal Node RemoveFirstNode()
+        {
+            if (this.head == null)
+                return null;
+            this.head = this.head.next;
+            return this.head;
+        }
     }
 }

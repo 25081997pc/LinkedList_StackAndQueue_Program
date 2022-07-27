@@ -7,12 +7,13 @@
             Console.WriteLine("Welcome to The LinkedList Program");
             LinkedList list = new LinkedList();
             list.Add(56);
-            //list.Add(30);
+            list.Add(30);
             list.Add(70);
             list.Display();
+            Console.WriteLine("---------------");
 
-            list.Insert(30);
-            Console.WriteLine("list is : ");
+            list.RemoveFirstNode();
+            Console.WriteLine("Elements in the Linked List are : ");
             list.Display();
         }
     }
