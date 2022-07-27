@@ -11,8 +11,10 @@
             list.Add(70);
             list.Display();
             Console.WriteLine("---------------");
-
-            list.Search(30);
+            
+            list.insertAtPosition(40,3);
+            Console.WriteLine("Linked List is : ");
+            list.Display();
             Console.ReadKey();
         }
     }

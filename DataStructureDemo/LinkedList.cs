@@ -113,5 +113,41 @@ namespace DataStructureDemo
             }
             return null;
         }
-    }
+        internal void insertAtPosition(int newElement, int positon)
+        {
+            Node newNode = new Node();
+            newNode.data = newElement;
+            newNode.next = null;
+            if (positon < 1)
+            {
+                Console.WriteLine("\nposition should be >= 1.");
+            }
+            else if (positon == 1)
+            {
+                newNode.next = head;
+                head = newNode;
+            }
+            else
+            {
+                Node temp = new Node();
+                temp = head;
+                for (int i = 1; i < positon - 1; i++)
+                {
+                    if (temp != null)
+                    {
+                        temp = temp.next;
+                    }
+                }
+                if (temp != null)
+                {
+                    newNode.next = temp.next;
+                    temp.next = newNode;
+                }
+                else
+                {
+                    Console.WriteLine("\nprevious node is null");
+                }
+            }
+        }
+    }   
 }
