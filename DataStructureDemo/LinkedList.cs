@@ -40,7 +40,22 @@ namespace DataStructureDemo
                 Console.Write(temp.data + " ");
                 temp = temp.next;
             }
-        }  
+        }
+
+        internal void Append(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                head = node;
+                node.next = temp;
+            }
+        }
     }
 }
 
