@@ -12,9 +12,8 @@
             list.Display();
             Console.WriteLine("---------------");
 
-            list.RemoveLastNode();
-            Console.WriteLine("Elements in the Linked List are : ");
-            list.Display();
+            list.Search(30);
+            Console.ReadKey();
         }
     }
 }

@@ -85,6 +85,7 @@ namespace DataStructureDemo
             this.head = this.head.next;
             return this.head;
         }
+        //This method is created to Delete Last Element of Linked List
         internal Node RemoveLastNode()
         {
             if (head == null)
@@ -99,6 +100,18 @@ namespace DataStructureDemo
             newNode.next = null;
             return head;
         }
-
+        //This method is created to Searching Value 
+        internal Node Search(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
+            }
+            return null;
+        }
     }
 }
