@@ -15,6 +15,11 @@
             list.insertAtPosition(40,3);
             Console.WriteLine("Linked List is : ");
             list.Display();
+            Console.WriteLine("---------------");
+
+            list.Delete_atPosition(3);
+            Console.WriteLine("Linked List is : ");
+            list.Display();
             Console.ReadKey();
         }
     }
