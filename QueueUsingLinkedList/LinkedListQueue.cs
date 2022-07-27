@@ -34,12 +34,24 @@ namespace QueueUsingLinkedList
             {
                 Console.WriteLine("Queue is empty");
                 return;
-
             }
             while (temp != null)
             {
                 Console.Write(temp.data + " ");
                 temp = temp.next;
+            }
+        }
+        //This method is created to Dequeue the element of Queue
+        internal void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            else
+            {
+                Console.WriteLine("The Dequeue element is : " + head.data);
+                head = head.next;
             }
         }
     }

@@ -11,6 +11,10 @@
             linkedListQueue.Enqueue(70);
 
             linkedListQueue.Display();
+            Console.WriteLine("=======================");
+
+            linkedListQueue.Dequeue();
+            linkedListQueue.Display();
             Console.ReadKey();
         }
     }
